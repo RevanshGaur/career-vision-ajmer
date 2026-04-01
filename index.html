@@ -1,164 +1,239 @@
-<!-- ========================= -->
-<!-- STYLE FILE (style.css) -->
-<!-- ========================= -->
+/* ========================= */
+/* PREMIUM STYLE (style.css) */
+/* ========================= */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
 }
 header {
-  background: #003366;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
   color: white;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
 }
 nav {
-  background: #0055aa;
-  padding: 10px;
+  background: #1e3c72;
+  padding: 12px;
   text-align: center;
 }
 nav a {
   color: white;
-  margin: 10px;
+  margin: 15px;
   text-decoration: none;
   font-weight: bold;
 }
-nav a:hover { color: yellow; }
-.container {
-  padding: 20px;
-}
+nav a:hover { color: #ffd700; }
+.container { padding: 30px; }
 .card {
   background: white;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+.btn {
+  background: #ff7e5f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.btn:hover { background: #feb47b; }
 footer {
-  background: #003366;
+  background: #0f2027;
   color: white;
   text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 15px;
 }
 
 /* ========================= */
-/* SCRIPT FILE (script.js) */
+/* SCRIPT (script.js) */
 /* ========================= */
-function showAlert() {
-  alert("Welcome to Career Vision Ajmer Institute!");
+function welcome() {
+  console.log("Welcome to Career Vision Ajmer Institute");
 }
 
 /* ========================= */
-/* HOME PAGE (index.html) */
+/* NAVBAR (copy to all pages) */
+/* ========================= */
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="courses.html">Courses</a>
+<a href="admissions.html">Admissions</a>
+<a href="faculty.html">Faculty</a>
+<a href="gallery.html">Gallery</a>
+<a href="testimonials.html">Testimonials</a>
+<a href="events.html">Events</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+/* ========================= */
+/* HOME PAGE */
 /* ========================= */
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Career Vision Ajmer</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+<title>Career Vision Ajmer</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
-<body onload="showAlert()">
-<header>
-  <h1>Career Vision Ajmer Institute</h1>
-</header>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="courses.html">Courses</a>
-  <a href="admissions.html">Admissions</a>
-  <a href="faculty.html">Faculty</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="testimonials.html">Testimonials</a>
-  <a href="events.html">Events</a>
-  <a href="blog.html">Blog</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<body onload="welcome()">
+<header><h1>Career Vision Ajmer Institute</h1></header>
+<nav>PASTE NAVBAR HERE</nav>
 <div class="container">
-  <div class="card">
-    <h2>Welcome</h2>
-    <p>Your path to success starts here.</p>
-  </div>
+<div class="card">
+<h2>Welcome</h2>
+<p>Best coaching institute in Ajmer for bright future.</p>
+<button class="btn">Join Now</button>
+</div>
 </div>
 <footer>© 2026 Career Vision Ajmer</footer>
 </body>
 </html>
 
-<!-- ========================= -->
-<!-- ABOUT PAGE -->
-<!-- ========================= -->
+/* ========================= */
+/* ABOUT PAGE */
+/* ========================= */
 <!DOCTYPE html>
 <html>
-<head>
-  <title>About</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<head><title>About</title><link rel="stylesheet" href="style.css"></head>
 <body>
 <header><h1>About Us</h1></header>
-<nav>Same navbar as index</nav>
-<div class="container">
-  <div class="card">
-    <p>We provide quality education and career guidance in Ajmer.</p>
-  </div>
-</div>
+<nav>PASTE NAVBAR HERE</nav>
+<div class="container"><div class="card">
+<p>We provide top quality coaching with expert teachers.</p>
+</div></div>
 <footer>© 2026</footer>
-</body>
-</html>
+</body></html>
 
-<!-- ========================= -->
-<!-- COURSES PAGE -->
-<!-- ========================= -->
+/* ========================= */
+/* COURSES PAGE */
+/* ========================= */
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Courses</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<head><title>Courses</title><link rel="stylesheet" href="style.css"></head>
 <body>
 <header><h1>Courses</h1></header>
-<nav>Same navbar</nav>
+<nav>PASTE NAVBAR HERE</nav>
 <div class="container">
-  <div class="card">Engineering Coaching</div>
-  <div class="card">Medical Coaching</div>
-  <div class="card">Commerce Classes</div>
+<div class="card">Engineering Coaching</div>
+<div class="card">Medical Coaching</div>
+<div class="card">Commerce Coaching</div>
 </div>
-</body>
-</html>
+</body></html>
 
-<!-- ========================= -->
-<!-- CONTACT PAGE (WITH FORM) -->
-<!-- ========================= -->
+/* ========================= */
+/* ADMISSIONS PAGE */
+/* ========================= */
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Contact</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<head><title>Admissions</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>Admissions</h1></header>
+<nav>PASTE NAVBAR HERE</nav>
+<div class="container"><div class="card">
+<p>Apply now to secure your seat.</p>
+<button class="btn">Apply Now</button>
+</div></div>
+</body></html>
+
+/* ========================= */
+/* FACULTY PAGE */
+/* ========================= */
+<!DOCTYPE html>
+<html>
+<head><title>Faculty</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>Faculty</h1></header>
+<nav>PASTE NAVBAR HERE</nav>
+<div class="container"><div class="card">
+<p>Highly qualified and experienced teachers.</p>
+</div></div>
+</body></html>
+
+/* ========================= */
+/* GALLERY PAGE */
+/* ========================= */
+<!DOCTYPE html>
+<html>
+<head><title>Gallery</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>Gallery</h1></header>
+<nav>PASTE NAVBAR HERE</nav>
+<div class="container"><div class="card">
+<p>Photos of our institute and events.</p>
+</div></div>
+</body></html>
+
+/* ========================= */
+/* TESTIMONIALS PAGE */
+/* ========================= */
+<!DOCTYPE html>
+<html>
+<head><title>Testimonials</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>Testimonials</h1></header>
+<nav>PASTE NAVBAR HERE</nav>
+<div class="container"><div class="card">
+<p>Students love our teaching methods.</p>
+</div></div>
+</body></html>
+
+/* ========================= */
+/* EVENTS PAGE */
+/* ========================= */
+<!DOCTYPE html>
+<html>
+<head><title>Events</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>Events</h1></header>
+<nav>PASTE NAVBAR HERE</nav>
+<div class="container"><div class="card">
+<p>Seminars and workshops conducted regularly.</p>
+</div></div>
+</body></html>
+
+/* ========================= */
+/* BLOG PAGE */
+/* ========================= */
+<!DOCTYPE html>
+<html>
+<head><title>Blog</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>Blog</h1></header>
+<nav>PASTE NAVBAR HERE</nav>
+<div class="container"><div class="card">
+<p>Latest updates and educational blogs.</p>
+</div></div>
+</body></html>
+
+/* ========================= */
+/* CONTACT PAGE */
+/* ========================= */
+<!DOCTYPE html>
+<html>
+<head><title>Contact</title><link rel="stylesheet" href="style.css"></head>
 <body>
 <header><h1>Contact Us</h1></header>
-<nav>Same navbar</nav>
-<div class="container">
-  <div class="card">
-    <form>
-      <input type="text" placeholder="Name" required><br><br>
-      <input type="email" placeholder="Email" required><br><br>
-      <textarea placeholder="Message"></textarea><br><br>
-      <button type="submit">Send</button>
-    </form>
-  </div>
-</div>
-</body>
-</html>
+<nav>PASTE NAVBAR HERE</nav>
+<div class="container"><div class="card">
+<form>
+<input type="text" placeholder="Name" required><br><br>
+<input type="email" placeholder="Email" required><br><br>
+<textarea placeholder="Message"></textarea><br><br>
+<button class="btn">Send</button>
+</form>
+</div></div>
+</body></html>
 
-<!-- ========================= -->
-<!-- NOTE -->
-<!-- ========================= -->
-/* Create separate files:
-style.css
-script.js
-and 10 HTML pages.
-Copy navbar into each page for full navigation */
+/* ========================= */
+/* INSTRUCTIONS */
+/* ========================= */
+/* 1. Create separate files for each page
+2. Replace 'PASTE NAVBAR HERE' with navbar code
+3. Upload all files to GitHub
+4. Enjoy your premium website */
